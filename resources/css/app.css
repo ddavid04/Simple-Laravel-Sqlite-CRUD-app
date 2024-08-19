@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Container for the notes */
+.note-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Single Note Container (Form Page) */
+.note-container.single-note {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for Note Form */
+.note-container.single-note h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* New Note Button */
+.new-note-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.new-note-btn:hover {
+    background-color: #45a049;
+}
+
+/* Notes Container */
+.notes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual Note */
+.note {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Note Body (content preview) */
+.note-body {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Buttons Container */
+.note-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Cancel Button */
+.note-cancel-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.note-cancel-button:hover {
+    background-color: #5a6268;
+}
+
+/* Submit Button */
+.note-submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.note-submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Textarea */
+.note-body {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.note-body::placeholder {
+    color: #aaa;
+}
+
+/* Edit, View, Delete Buttons */
+.note-edit-button, .note-delete-button {
+    display: inline-block;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* View Button */
+.note-edit-button {
+    background-color: #007BFF;
+    color: white;
+}
+
+.note-edit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Delete Button */
+.note-delete-button {
+    background-color: #DC3545;
+    color: white;
+}
+
+.note-delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Pagination Container */
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Pagination Info */
+.pagination-info {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Pagination Links */
+.pagination-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Pagination Arrows */
+.pagination-arrow {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.pagination-arrow.disabled {
+    background-color: #ddd;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.pagination-arrow:hover:not(.disabled) {
+    background-color: #0056b3;
+}
+
+/* Pagination Links */
+.pagination-link {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.pagination-link.active {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination-link:hover {
+    background-color: #ddd;
+}
